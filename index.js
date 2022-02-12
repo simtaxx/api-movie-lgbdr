@@ -25,6 +25,8 @@ app.use(express.urlencoded({
 
 app.use('/api', routes);
 
-app.listen(8081, () => {
-  console.log('http://localhost:8081/api');
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
+  console.log(`http://localhost:${port}/api`);
 });
