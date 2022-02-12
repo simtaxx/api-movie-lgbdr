@@ -1,6 +1,6 @@
 const mariaDb = require('./db');
 
-exports.fetchAll = async (limit, page, orderType, orderByDesc, result) => {
+exports.fetchAll = async (limit = 10, page = 1, orderType = 1, orderByDesc = 0, result) => {
   const orderTypes = {
     1: 'film.title',
     2: 'pay.amount',
