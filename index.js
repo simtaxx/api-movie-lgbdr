@@ -3,7 +3,7 @@ const app = express();
 const routes = require('./routes');
 const cors = require('cors');
 
-const corsOptions = {
+/* const corsOptions = {
   origin: '*',
   allowedHeaders: [
     'Content-Type',
@@ -15,9 +15,9 @@ const corsOptions = {
   ],
   credentials: true,
   methods: ['GET']
-};
+}; */
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
