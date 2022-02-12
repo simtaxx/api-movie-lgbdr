@@ -19,7 +19,9 @@
   "homepage": "https://github.com/simtaxx/api-movie-lgbdr#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
+    "mariadb": "^2.5.5",
     "mysql": "^2.18.1"
   }
 }

@@ -1,7 +1,7 @@
-const mysql = require('mysql');
+const mariadb = require('mariadb');
 const dbConfig = require('../config/db.js');
 
-const connection = mysql.createConnection({
+const connection = mariadb.createPool({
   host: dbConfig.HOST,
   user: dbConfig.USER,
   password: dbConfig.PASSWORD,
@@ -9,9 +9,12 @@ const connection = mysql.createConnection({
   database: dbConfig.DB
 });
 
-connection.connect(error => {
-  if (error) throw error;
-  console.log('Successfully connected to the database.');
-});
+connection.getConnection()
+  .then(() => {
+    console.log('je suis co');
+  })
+  .catch((err) => {
+    throw err;
+  });
 
 module.exports = connection;
