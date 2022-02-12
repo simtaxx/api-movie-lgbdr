@@ -1,0 +1,25 @@
+{
+  "name": "api-movie-lgbdr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simtaxx/api-movie-lgbdr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simtaxx/api-movie-lgbdr/issues"
+  },
+  "homepage": "https://github.com/simtaxx/api-movie-lgbdr#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1"
+  }
+}
